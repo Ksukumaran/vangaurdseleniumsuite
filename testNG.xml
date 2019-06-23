@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+    <listeners>
+        <listener class-name="utils.ListenerClass"/>
+        <listener class-name="utils.ExtentReporterNG" />
+    </listeners>
+    <test name="Vangaurd Test">
+<!--Please change the "value" below to chrome/firefox depending on browser you want the suite to execute in -->
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="vangaurdtestsuite.fundCompareTest"/>
+        </classes>
+    </test>
+</suite> <!-- Suite -->
