@@ -19,7 +19,7 @@ public class ExtentReporterNG implements IReporter {
  
     public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
         String dateFileName= new SimpleDateFormat("yyyy-MM-dd").format(new Date());
-        extent = new ExtentReports(outputDirectory + File.separator + "HealthCheckReport-"+dateFileName+".html", true);
+        extent = new ExtentReports(outputDirectory + File.separator + "VangaurdTestReport-"+dateFileName+".html", true);
  
         for (ISuite suite : suites) {
             Map<String, ISuiteResult> result = suite.getResults();
